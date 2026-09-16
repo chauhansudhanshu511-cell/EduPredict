@@ -1,0 +1,30 @@
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+env/
+*.egg-info/
+
+# Data: only the small, synthetic, input-only sample is committed
+data/*
+!data/sample_students.csv
+!data/README.md
+
+# Models: only the small synthetic demo artifacts are committed.
+# Models trained on real data should go to models/private/ (never commit them).
+models/*
+!models/.gitkeep
+!models/edupredict_model.joblib
+!models/metadata.json
+models/private/
+
+# Secrets & local config
+.streamlit/secrets.toml
+.env
+
+# OS / editors
+.DS_Store
+.idea/
+.vscode/

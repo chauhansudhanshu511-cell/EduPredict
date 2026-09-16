@@ -1,0 +1,7 @@
+# Pinned so the committed model artifact loads with the same library versions it was trained with.
+streamlit==1.64.0
+pandas==3.0.2
+numpy==2.4.4
+scikit-learn==1.8.0
+plotly==7.1.0
+joblib==1.5.3

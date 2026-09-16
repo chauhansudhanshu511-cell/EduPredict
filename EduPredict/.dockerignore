@@ -1,0 +1,13 @@
+.git
+.github
+.venv
+venv
+__pycache__
+*.pyc
+.pytest_cache
+data/*
+!data/sample_students.csv
+models/private
+docs/screenshots
+.streamlit/secrets.toml
+.env

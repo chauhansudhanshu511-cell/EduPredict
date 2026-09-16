@@ -1,0 +1,27 @@
+name: tests
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: ["3.11", "3.12"]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+          cache: pip
+      - name: Install dependencies
+        run: pip install -r requirements-dev.txt
+      - name: Generate synthetic data and train
+        run: |
+          python scripts/generate_demo_data.py
+          python -m src.train --data data/students_synthetic.csv --dataset-type synthetic --output-dir /tmp/ci-model
+      - name: Run tests
+        run: pytest -q
