@@ -1,5 +1,12 @@
 # 🎓 EduPredict — AI-Driven Student Performance Prediction System
 
+[![Open in Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://edupredict-drivenprediction.streamlit.app/)
+[![tests](https://github.com/chauhansudhanshu511-cell/EduPredict/actions/workflows/tests.yml/badge.svg)](https://github.com/chauhansudhanshu511-cell/EduPredict/actions/workflows/tests.yml)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+
+**🔗 Live demo:** https://edupredict-drivenprediction.streamlit.app/  
+**📦 Repository:** https://github.com/chauhansudhanshu511-cell/EduPredict
+
 EduPredict is a Streamlit web app that **estimates a student's final exam score (0–100)** from information
 available *before* the exam, and pairs the estimate with **supportive, rule-based study suggestions**.
 
@@ -210,7 +217,7 @@ If you change library versions, retrain and commit the new artifacts.
    git add .
    git status                     # check: no data/students_synthetic.csv, no .venv
    git commit -m "Initial commit: EduPredict"
-   git remote add origin https://github.com/<your-username>/EduPredict.git
+   git remote add origin https://github.com/chauhansudhanshu511-cell/EduPredict.git
    git push -u origin main
    ```
 3. Open the **Actions** tab to see the `tests` workflow run.
@@ -218,7 +225,7 @@ If you change library versions, retrain and commit the new artifacts.
 ### Deploy on Streamlit Community Cloud
 1. Sign in at [share.streamlit.io](https://share.streamlit.io) with GitHub.
 2. Click **Create app** → **Yup, I have an app**.
-3. Fill in **Repository** `<your-username>/EduPredict`, **Branch** `main`, **Main file path** `app.py`,
+3. Fill in **Repository** `chauhansudhanshu511-cell/EduPredict`, **Branch** `main`, **Main file path** `app.py`,
    and optionally a custom **App URL**.
 4. Open **Advanced settings** and choose **Python 3.12** (or 3.11). No secrets are needed.
 5. Click **Deploy** and wait for dependencies to install. Community Cloud reads `requirements.txt` from the repo root.
